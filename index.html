@@ -9,111 +9,108 @@
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
       * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
 
-.home {
-  height: 100%;
-  background-color: #3d3028;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10% 5%;
-}
+      .home {
+        height: 100%;
+        background-color: #3d3028;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10% 5%;
+      }
 
-.home-image {
-  width: 300px;
-  height: 300px;
-  background: #3d3028;
-  border-radius: 50%;
-  border: 15px solid #fff;
-  outline: 15px solid #3d3028;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+      .home-image {
+        width: 300px;
+        height: 300px;
+        background: #3d3028;
+        border-radius: 50%;
+        border: 15px solid #fff;
+        outline: 15px solid #3d3028;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-.home-image img {
-  max-width: 100%;
-  max-height: 100%;
-}
+      .home-image img {
+        max-width: 100%;
+        max-height: 100%;
+      }
 
-.home-content {
-  max-width: 600px;
-  color: #fff;
-  text-align: center;
-}
+      .home-content {
+        max-width: 600px;
+        color: #fff;
+        text-align: center;
+      }
 
-.home-content h1 {
-  font-size: 3.5vw;
-  line-height: 1.2;
-  margin-bottom: 10px;
-  color: white;
-}
+      .home-content h1 {
+        font-size: 3.5vw;
+        line-height: 1.2;
+        margin-bottom: 10px;
+        color: white;
+      }
 
-.home-content h3 {
-  font-size: 2.5vw;
-  color: white;
-}
+      .home-content h3 {
+        font-size: 2.5vw;
+        color: white;
+      }
 
-.home-content h4 {
-  font-size: 2vw;
-  margin-top: 10px;
-  color: #40a2e3;
-}
+      .home-content h4 {
+        font-size: 2vw;
+        margin-top: 10px;
+        color: #40a2e3;
+      }
 
-.home-content p {
-  font-size: 1.5vw;
-  margin-top: 20px;
-  color: white;
-}
+      .home-content p {
+        font-size: 1.5vw;
+        margin-top: 20px;
+        color: white;
+      }
 
+      /* For screens above 1130px */
+      @media screen and (min-width: 1131px) {
+        .home {
+          flex-direction: row;
+          align-items: flex-start;
+          background: linear-gradient(-90deg, #3d3028 65%, #ffff 35%);
+          height: 80vh;
+        }
 
-/* For screens above 1130px */
-@media screen and (min-width: 1131px) {
-  .home {
-    flex-direction: row;
-    align-items: flex-start;
-    background: linear-gradient(-90deg, #3d3028 65%, #ffff 35%);
-    height: 80vh;
-  }
+        .home-image {
+          order: -1;
+          margin-right: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: auto;
+          height: auto;
+        }
 
-  .home-image {
-    order: -1;
-    margin-right: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: auto;
-  }
-
-  .home-content {
-    text-align: left;
-  }
-  .home-content h1 {
-    font-size: 3vw; 
-    color: white;
-  }
-  .home-content h3 {
-    font-size: 2vw; 
-    color: white;
-  }
-  .home-content h4 {
-    font-size: 1vw; 
-    color: aqua;
-  }
-  .home-content p {
-    font-size: 0.8vw; 
-  }
-}
-
-
+        .home-content {
+          text-align: left;
+        }
+        .home-content h1 {
+          font-size: 3vw;
+          color: white;
+        }
+        .home-content h3 {
+          font-size: 2vw;
+          color: white;
+        }
+        .home-content h4 {
+          font-size: 1vw;
+          color: aqua;
+        }
+        .home-content p {
+          font-size: 0.8vw;
+        }
+      }
     </style>
   </head>
   <body>
@@ -152,5 +149,6 @@
         </p>
       </div>
     </section>
+    
   </body>
 </html>
